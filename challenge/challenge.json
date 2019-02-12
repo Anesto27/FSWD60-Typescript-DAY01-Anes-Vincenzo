@@ -1,0 +1,9 @@
+restaurant=[{
+	"image": "img/pizza.jpg"
+},{
+	"image": "img/cevap.jpg"
+},{
+	"image": "img/humus.jpg"
+
+}
+];
