@@ -1,14 +1,8 @@
 var photo = ["../img/pizza.jpg", "../img/cevap.jpg", "../img/humus.jpg"];
 var price = ["10$", "8$", "3$"];
 var descrp = ["Pizza", "Cevapcici", "Humus"];
-function rest(a) {
-    for (var i = 0; i < a.length; i++) {
-        document.write(a[i] + "<br>");
-    }
-}
-rest(price);
-rest(descrp);
-for (var _i = 0, photo_1 = photo; _i < photo_1.length; _i++) {
-    var b = photo_1[_i];
-    document.write("<img src='" + b + "'> <br>");
+var x = price[0], y = price[1], z = price[2];
+for (var b in photo) {
+    document.getElementsByClassName("main")[0].innerHTML += ("<img src='" + photo[b] + "'>" + descrp[b] + " " + price[b] + " <p class='all'></p><br>");
+    document.getElementsByClassName("all")[0].innerHTML = "Today special offer for menu instead of " + x + " it will be " + y;
 }
